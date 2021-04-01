@@ -1,0 +1,32 @@
+<Qucs Schematic 0.0.22>
+<Properties>
+  <View=0,0,1437,941,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=hivolt4.dat>
+  <DataDisplay=hivolt4.sch>
+  <OpenDisplay=1>
+  <Script=hivolt4.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 240 811 665 311 3 #c0c0c0 1 10 1 0.1 1 1e+08 0 -20 20 160 0 -225 45 225 315 0 225 "" "" "">
+	<"ngspice/ac.gaineq" #0000ff 0 3 0 0 0>
+	<"ngspice/ac.phseq" #ff0000 0 3 0 0 1>
+  </Rect>
+  <Rect 120 433 1277 363 3 #c0c0c0 1 00 1 0 1e-05 0.0002 1 -48.4811 20 48.4845 1 -1 0.2 1 315 0 225 "" "" "">
+	<"ngspice/tran.v(output)" #0000ff 0 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
