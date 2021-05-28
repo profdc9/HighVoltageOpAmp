@@ -1,44 +1,39 @@
-### Module positions - created on 04/11/21 14:09:59 ###
-### Printed by Pcbnew version kicad 4.0.7
-## Unit = mm, Angle = deg.
-## Side : top
-# Ref     Val              Package                    PosX       PosY       Rot  Side
-C1        1 uF             C_0805_HandSoldering    92.2000   -60.2500  270.0000  top
-C2        1 uF             C_0805_HandSoldering    95.4000   -61.7000    0.0000  top
-C3        1 uF             C_0805_HandSoldering    96.8000   -65.0000  270.0000  top
-C4        1 uF             C_0805_HandSoldering    96.8000   -69.8500  270.0000  top
-C6        100 nF           C_0805_HandSoldering    91.7500   -72.1500  180.0000  top
-C7        47 pF            C_0805_HandSoldering    91.7000   -68.5500  270.0000  top
-D3        D_x2_Serial_AKC  SOT-23                  72.0250   -73.8500    0.0000  top
-D4        D_x2_Serial_AKC  SOT-23                  68.2750   -78.9500  270.0000  top
-D5        D_x2_Serial_AKC  SOT-23                  59.5000   -67.4750  270.0000  top
-Q1        5551             SOT-23                  66.9500   -65.8000   90.0000  top
-Q2        5401             SOT-23                  66.8750   -62.1000  270.0000  top
-Q4        5551             SOT-23                  61.9500   -78.8800   90.0000  top
-Q5        5401             SOT-23                  63.2250   -62.1500  270.0000  top
-Q7        5551             SOT-23                  63.2500   -65.8500   90.0000  top
-Q8        5401             SOT-23                  72.3500   -65.7000   90.0000  top
-Q9        5551             SOT-23                  72.1750   -78.8750    0.0000  top
-Q10       5401             SOT-23                  77.5500   -65.7000  270.0000  top
-Q11       5551             SOT-23                  75.7750   -73.8750    0.0000  top
-Q12       5551             SOT-23                  88.6250   -69.0250   90.0000  top
-Q13       5551             SOT-23                  96.1500   -75.4500    0.0000  top
-Q14       5401             SOT-23                  86.3000   -78.5000    0.0000  top
-Q15       5551             SOT-23                  93.1500   -79.9250    0.0000  top
-Q16       5401             SOT-23                  80.0000   -78.0000  180.0000  top
-R1        150R             R_0805_HandSoldering    69.0500   -59.0500  180.0000  top
-R2        680R             R_0805_HandSoldering    65.1000   -79.1750  270.0000  top
-R3        150R             R_0805_HandSoldering    63.9250   -59.0750  180.0000  top
-R4        680R             R_0805_HandSoldering    75.0000   -78.9500  270.0000  top
-R5        10k              R_0805_HandSoldering    79.5000   -61.4500  270.0000  top
-R6        100k             R_0805_HandSoldering    72.6000   -68.5500    0.0000  top
-R7        100k             R_0805_HandSoldering    72.5000   -70.8250  180.0000  top
-R8        22R              R_0805_HandSoldering    76.2500   -61.5500  270.0000  top
-R9        4k7              R_0805_HandSoldering    82.1500   -66.7500    0.0000  top
-R10       1k               R_0805_HandSoldering    84.1000   -69.8000    0.0000  top
-R11       2k2              R_0805_HandSoldering    91.6750   -75.7000  180.0000  top
-R12       22R              R_0805_HandSoldering    88.9750   -79.4500  270.0000  top
-R13       22R              R_0805_HandSoldering    83.3000   -78.6000   90.0000  top
-R14       680R             R_0805_HandSoldering    67.5000   -70.1500    0.0000  top
-R15       680R             R_0805_HandSoldering    62.3500   -70.1500    0.0000  top
-## End
+DesignatorValue         Package           Mid X    Mid Y    RotationLayer
+C1        1 uF          C_0805_HandSolderi     92.2   -60.25     270top  
+C2        1 uF          C_0805_HandSolderi     95.4    -61.7       0top  
+C3        1 uF          C_0805_HandSolderi     96.8      -65     270top  
+C4        1 uF          C_0805_HandSolderi     96.8   -69.85     270top  
+C6        100 nF        C_0805_HandSolderi    91.75   -72.15     180top  
+C7        47 pF         C_0805_HandSolderi     91.7   -68.55     270top  
+D3        D_x2_Serial_AKSOT-23               72.025   -73.85     180top  
+D4        D_x2_Serial_AKSOT-23               68.275   -78.95      90top  
+D5        D_x2_Serial_AKSOT-23                 59.5  -67.475      90top  
+Q1                  5551SOT-23                66.95    -65.8     270top  
+Q2                  5401SOT-23               66.875    -62.1      90top  
+Q4                  5551SOT-23                61.95   -78.88     270top  
+Q5                  5401SOT-23               63.225   -62.15      90top  
+Q7                  5551SOT-23                63.25   -65.85     270top  
+Q8                  5401SOT-23                72.35    -65.7     270top  
+Q9                  5551SOT-23               72.175  -78.875     180top  
+Q10                 5401SOT-23                77.55    -65.7      90top  
+Q11                 5551SOT-23               75.775  -73.875     180top  
+Q13                 5551SOT-23                96.15   -75.45     180top  
+Q14                 5401SOT-23                88.51   -78.65     180top  
+Q15                 5551SOT-23                93.15  -79.925     180top  
+Q16                 5401SOT-23                79.52   -79.23       0top  
+R1        150R          R_0805_HandSolderi    69.05   -59.05     180top  
+R2        680R          R_0805_HandSolderi     65.1  -79.175     270top  
+R3        150R          R_0805_HandSolderi   63.925  -59.075     180top  
+R4        680R          R_0805_HandSolderi       75   -78.95     270top  
+R5        10k           R_0805_HandSolderi     79.5   -61.45     270top  
+R6        100k          R_0805_HandSolderi     72.6   -68.55       0top  
+R7        100k          R_0805_HandSolderi     72.5  -70.825     180top  
+R8        22R           R_0805_HandSolderi    76.25   -61.55     270top  
+R9        4k7           R_0805_HandSolderi    82.15   -66.75       0top  
+R10       1k            R_0805_HandSolderi     82.5    -69.8       0top  
+R11       2k2           R_0805_HandSolderi   91.675    -75.7     180top  
+R12       22R           R_1206_HandSolderi     85.4    -80.2      90top  
+R13       22R           R_1206_HandSolderi    82.57   -80.19     270top  
+R14       680R          R_0805_HandSolderi     67.5   -70.15       0top  
+R15       680R          R_0805_HandSolderi    62.35   -70.15       0top  
+## End                                                              

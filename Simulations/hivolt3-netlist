@@ -1,0 +1,125 @@
+* Qucs 0.0.22 E:/projects/HighVoltageOpAmp/Simulations/hivolt3.sch
+.INCLUDE "E:/Program Files (x86)/Qucs-S/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.22  E:/projects/HighVoltageOpAmp/Simulations/hivolt3.sch
+.OPTION TEMP = 25
+Q7 _net0  _net1  _net2 Q2N5551C
+Q8 _net3  _net4  _net5 Q2N5401C
+Q4 _net6  _net6  _net7 Q2N5401C
+Q3 _net4  _net6  _net8 Q2N5401C
+Q10 _net9  _net5  _net10 Q2N5401C
+Q13 _net11  _net12  _net13 Q2N5401C
+Q17 _net1  _net14  _net15 Q2N5551C
+VPr2 _net16 _net15 DC 0
+VPr1 _net17 _net18 DC 0
+VPr3 _net17 _net19 DC 0
+VPr4 _net11 _net15 DC 0
+VPr5 _net9 _net20 DC 0
+VPr6 _net12 _net21 DC 0
+Q12 _net19  _net20  _net22 Q2N5551C
+R121 Output _net23  0
+R119 _net17 _net1  200K
+Q11 _net21  _net1  _net14 Q2N5551C
+Q18 _net20  _net24  _net12 Q2N5551C
+R124 _net20 _net24  4.7K
+R125 _net24 _net25  1000
+D_1N4148_5 _net1 _net26 DMOD_D_1N4148_5 AREA=1.0 Temp=26.85
+.MODEL DMOD_D_1N4148_5 D (Is=2.22e-10 N=1.65 Cj0=4e-12 M=0.333 Vj=0.7 Fc=0.5 Rs=0.0686 Tt=5.76e-09 Ikf=0 Kf=0 Af=1 Bv=75 Ibv=1e-06 Xti=3 Eg=1.11 Tcv=0 Trs=0 Ttt1=0 Ttt2=0 Tm1=0 Tm2=0 Tnom=26.85 )
+D_1N4148_6 _net26 _net27 DMOD_D_1N4148_6 AREA=1.0 Temp=26.85
+.MODEL DMOD_D_1N4148_6 D (Is=2.22e-10 N=1.65 Cj0=4e-12 M=0.333 Vj=0.7 Fc=0.5 Rs=0.0686 Tt=5.76e-09 Ikf=0 Kf=0 Af=1 Bv=75 Ibv=1e-06 Xti=3 Eg=1.11 Tcv=0 Trs=0 Ttt1=0 Ttt2=0 Tm1=0 Tm2=0 Tnom=26.85 )
+D_1N4148_7 _net27 _net15 DMOD_D_1N4148_7 AREA=1.0 Temp=26.85
+.MODEL DMOD_D_1N4148_7 D (Is=2.22e-10 N=1.65 Cj0=4e-12 M=0.333 Vj=0.7 Fc=0.5 Rs=0.0686 Tt=5.76e-09 Ikf=0 Kf=0 Af=1 Bv=75 Ibv=1e-06 Xti=3 Eg=1.11 Tcv=0 Trs=0 Ttt1=0 Ttt2=0 Tm1=0 Tm2=0 Tnom=26.85 )
+C7 _net20 _net12  100N 
+VPr8 _net3 _net15 DC 0
+R3 _net8 _net17  150
+Q14 _net18  _net22  _net28 Q2N5551HOT
+Q15 _net16  _net13  _net29 Q2N5401HOT
+R117 _net28 Output  22
+R118 Output _net29  22
+VPr7 _net30 _net0 DC 0
+R127 _net5 _net17  4.7K
+R19 _net10 _net17  100
+R8 _net31 _net30  400
+R9 _net32 _net30  400
+R4 _net7 _net17  150
+R12 _net2 _net15  680
+
+Q1 _net4  _net33  _net31 Q2N5551C
+Q2 _net6  Input  _net32 Q2N5551C
+V8 0 _net15 DC 15
+V5 _net17 0 DC 15
+C8 _net4 _net22  47P 
+R116 _net33 0  1K
+R122 _net33 0  1K
+R126 _net34 Input  10K
+R114 Input _net23  10K
+R120 Output 0  600
+V9 _net34 0 DC 0 SIN(0 10 20K 0 0 0) AC 10
+R123 _net25 _net12  250
+R24 _net14 _net15  150
+R110 _net22 _net13  2200
+.MODEL Q2N5551C npn
++IS=9e-15	BF=125 		VAF=667
++IKF=0.09	ISE=1e-15	NE=1.3		NF=1
++RB=92 		RC=1		RE=0.1
++CJE=45e-12 	MJE=0.35	VJE=0.75
++CJC=4.9e-12	MJC=0.30	VJC=0.75	FC=0.5
++TF=565e-12 	XTF=300		VTF=5		ITF=2.0
++TR=1.2e-9	BR=3		IKR=0
++EG=1.1 	XTB=1.5		XTI=3		NC=2
++ISC=0		mfg=CA031011
+
+.MODEL Q2N5401C pnp
++IS=25e-15	BF=220 		VAF=196
++IKF=0.2	ISE=2e-15	NE=1.4		NF=1
++RB=60 		RC=2		RE=0.1
++CJE=35e-12 	MJE=0.40	VJE=0.75
++CJC=15e-12	MJC=0.55	VJC=0.75	FC=0.5
++TF=800e-12 	XTF=60	 	VTF=0		ITF=4
++TR=1.5e-9	BR=4		IKR=0		
++EG=1.1 	XTB=1.5		XTI=3		NC=2
++ISC=0		mfg=CA031011
+
+.MODEL Q2N5551HOT npn
+ +IS=9e-15  TNOM=20 	BF=125 		VAF=667
++IKF=0.09	ISE=1e-15	NE=1.3		NF=1
++RB=92 		RC=1		RE=0.1
++CJE=45e-12 	MJE=0.35	VJE=0.75
++CJC=4.9e-12	MJC=0.30	VJC=0.75	FC=0.5
++TF=565e-12 	XTF=300		VTF=5		ITF=2.0
++TR=1.2e-9	BR=3		IKR=0
++EG=1.1 	XTB=1.5		XTI=3		NC=2
++ISC=0		mfg=CA031011
+
+.MODEL Q2N5401HOT  pnp
+ +IS=25e-15	TNOM=20 BF=220 		VAF=196
++IKF=0.2	ISE=2e-15	NE=1.4		NF=1
++RB=60 		RC=2		RE=0.1
++CJE=35e-12 	MJE=0.40	VJE=0.75
++CJC=15e-12	MJC=0.55	VJC=0.75	FC=0.5
++TF=800e-12 	XTF=60	 	VTF=0		ITF=4
++TR=1.5e-9	BR=4		IKR=0		
++EG=1.1 	XTB=1.5		XTI=3		NC=2
++ISC=0		mfg=CA031011
+
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+ac dec 30 0.01 100meg 
+let phseq=phase(v(Output)/v(Input))*57.3
+let gaineq=20*log10(mag(v(Output)/v(Input)))
+write hivolt3_ac.txt v(Input) v(Output) VPr1#branch VPr2#branch VPr3#branch VPr4#branch VPr5#branch VPr6#branch VPr7#branch VPr8#branch  phseq gaineq
+destroy all
+reset
+
+tran 1e-07 0.0002 0 
+set nfreqs=20
+fourier 20K V(Output) > spice4qucs.four
+let phseq=phase(v(Output)/v(Input))*57.3
+let gaineq=20*log10(mag(v(Output)/v(Input)))
+write hivolt3_tran.txt v(Input) v(Output) VPr1#branch VPr2#branch VPr3#branch VPr4#branch VPr5#branch VPr6#branch VPr7#branch VPr8#branch  phseq gaineq
+destroy all
+reset
+
+exit
+.endc
+.END
