@@ -904,7 +904,7 @@ F 1 "TIP42" H 8200 3700 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 8200 3625 50  0001 L CIN
 F 3 "" H 7950 3700 50  0001 L CNN
 	1    7950 3700
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6950 2350 6950 2050
